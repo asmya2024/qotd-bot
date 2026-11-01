@@ -42,5 +42,5 @@ async def invia_domanda():
         await canale.send(embed=embed)
     except Exception as e:
         print(f"Errore nell'invio del messaggio: {e}")
-
-bot.run("MTU2NjQ5NDYyMTQ5NDY4MTYzMQ.GxbPJy.V8IpVf-pGIx6QSXj_2OuTU_S9AQWklyd8SD6no")
+TOKEN = os.getenv('DISCORD_TOKEN')
+bot.run(TOKEN)
